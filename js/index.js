@@ -72,8 +72,14 @@ let mainContentP = document.querySelectorAll("main-content p");
   mainContentP[3].innerHTML = siteContent ["main-content"] ["product-content"] ;
   mainContentP[4].innerHTML = siteContent ["main-content"] ["vision-content"] ;
 
+
+  //----- Main Content Middle Img------//
 let middleImg = document.getElementById("middle-img");
   middleImg.setAttribute('src', siteContent["main-content"] ["middle-img-src"]) ;
 
 
-  
+//-------- Contact -------//
+
+let contactH4 = document.querySelector(".contact h4") ;
+
+let contacts = document.querySelectorAll(".contact p") ;
