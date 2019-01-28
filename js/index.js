@@ -46,7 +46,7 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 
 let nav = document.querySelectorAll("nav a");
-console.log(nav);
+
 let dom = document.querySelector("h1")
 
 let ctaButton = document.querySelector("button")
@@ -55,7 +55,25 @@ let ctaImg = document.getElementById("cta-img")
 
 //----------main-content-------------//
 
-let mainContentH4 = document.querySelectorAll("h4");
+
+//--------Main content h4-------------//
+let mainContentH4 = document.querySelectorAll(".main-content h4");
+  mainContentH4[0].innetHTML = "Features";
+  mainContenth4[1].innerHTML = "About";
+  mainContentH4[2].innerHTML = "Services";
+  mainContentH4[3].innerHTML = "Product";
+  mainContentH4[4].innerHTML = "Vision";
+
+//---------Main content P's---------//
+let mainContentP = document.querySelectorAll("main-content p");
+  mainContentP[0].innerHTML = siteContent ["main-content"] ["features-content"] ;
+  mainContentP[1].innerHTML = siteContent ["main-content"] ["about-content"] ;
+  mainContentP[2].innerHTML = siteContent ["main-content"] ["services-content"] ;
+  mainContentP[3].innerHTML = siteContent ["main-content"] ["product-content"] ;
+  mainContentP[4].innerHTML = siteContent ["main-content"] ["vision-content"] ;
+
+let middleImg = document.getElementById("middle-img");
+  middleImg.setAttribute('src', siteContent["main-content"] ["middle-img-src"]) ;
 
 
-let 
+  
