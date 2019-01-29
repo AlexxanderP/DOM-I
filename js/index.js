@@ -39,26 +39,31 @@ const siteContent = {
 
 // // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+  logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 
-//------Navigation---//
+// *****------Navigation--- *****//
 
 let nav = document.querySelectorAll("nav a");
-  nav[0].style.color = "green";
   nav[0].innerHTML = "Services";
+  nav[0].style.color = "green";
+
   nav[1].innerHTML = "Product";
   nav[1].style.color = "green";
+
   nav[2].innerHTML = "Vision";
   nav[2].style.color = "green";
+
   nav[3].innerHTML = "Features";
   nav[3].style.color = "green";
+
   nav[4].innerHTML = "About";
   nav[4].style.color="green";
+
   nav[5].innerHTML = "Contact";
   nav[5].style.color = "green";
 
-//------New Nav Items-----//
+// ***** ------New Nav Items----- *****//
 
 //------- Donate -----//
   const greatNav = document.querySelector('header nav');
@@ -67,6 +72,7 @@ let nav = document.querySelectorAll("nav a");
   donate.innerHTML = 'Donate';
   donate.style.color = 'green';
   donate.href = '#';
+
 
   //----- Sign In----//
   const signIn = document.createElement('a');
@@ -77,7 +83,7 @@ let nav = document.querySelectorAll("nav a");
 
 
 
-//------- CTA ------//
+// *****------- CTA ------ *****//
 
 //------Img------//
 let ctaImg = document.getElementById("cta-img");
@@ -89,12 +95,12 @@ let dom = document.querySelector(".cta-text h1");
   dom.innerHTML = "DOM <br> is <br> Awesome";
 
 
-//---- cta button Get Started-----//
+//---- CTA button Get Started-----//
 let ctaButton = document.querySelector(".cta button");
   ctaButton.innerHTML = "Get Started";
 
 
-//----------main-content-------------//
+//***** ----------main-content-------------*****//
 
 
 //--------Main content h4-------------//
@@ -104,6 +110,7 @@ let topContentH4 = document.querySelectorAll('.text-content h4');
   topContentH4[2].innerHTML = siteContent["main-content"]["services-h4"];
   topContentH4[3].innerHTML = siteContent["main-content"]["product-h4"];
   topContentH4[4].innerHTML = siteContent["main-content"]["vision-h4"];
+
 
 // ---------Main content P's---------//
 let mainContentP = document.querySelectorAll(".text-content p");
@@ -119,7 +126,7 @@ let middleImg = document.getElementById("middle-img");
   middleImg.setAttribute('src', siteContent["main-content"] ["middle-img-src"]) ;
 
 
-//-------- Contact -------//
+// *****-------- Contact -------******//
 
 //---- Contact H4-----//
 let contactH4 = document.querySelector('.contact h4') ;
@@ -132,7 +139,8 @@ let contactH4 = document.querySelector('.contact h4') ;
   contactInfo[1].innerHTML = "1 (888) 888-8888";
   contactInfo[2].innerHTML = "sales@greatidea.io";
 
-//------ Footer ---------//
+
+// ******------ Footer ---------******//
 
 let footer = document.querySelector ("footer") ;
   footer.textContent = siteContent['footer']['copyright'] ;
